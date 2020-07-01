@@ -1,0 +1,29 @@
+1. The test is is attempting to make an api request with a  query parameter for a search phrase;
+
+	https://api.com/v1/people?searchPhrase=Andrew
+	
+	the test then runs a get request on the url above.
+	
+	then tries to retireve the id of the result without a key search but by using indexing
+	
+	it then deletes the the id associated to the searchPrase get request result.
+	
+	and expects a no conent response 204 as a status code to the delete request
+	
+	it then creates a get request to people andpoint with the id of Andrew
+	
+	and expects a not found 404 which suggest the user with that id does not exist
+	
+	
+2. this is a static test assuming andrew allways exists or gets added before the test is run
+
+the query to find the id key is using indexing making assumption of the return structure
+
+tests for different api methods are strung together
+
+
+3. parameterize data  , setup data before test is run in a pre requisite methods
+
+break up different requuest into smaller units to test functionality and create a sequential flow to determine where the api request method could contain a bug
+
+dont make assumptions of the response schema more dynamic

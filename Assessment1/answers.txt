@@ -1,0 +1,15 @@
+1. has error handling been catered for on unproccessable data i.e frontend or backend validation of data
+
+
+2.1 functionality - front end ability to perform those functions create, edit ,view delete
+2.2 message queue - ability to process conncurrent user creations - does the queue process requests between gateway and micro service
+2.3 database & micro service - test in isolation if microservice are process according to acceptance criteria of feature
+
+3. Frontend - UX experience , functionality as it will flow throughout all integration points to check functionality on gateway to microservice, gateway to message queue to microservice proccessing addition and updating of users.
+error handling to user when integration points are down, what errors are shown to the user message. does front end wait for user to be added and display or does it assume its been added to queue
+
+4. Validation Microservice impacts member add/update microservice dependant on each other
+
+
+
+
