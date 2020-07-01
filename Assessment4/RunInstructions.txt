@@ -1,0 +1,10 @@
+jre/jdk 8 is installed and JAVA_HOME is set
+python 3.7 installed
+
+sikulix ide downloaded - version 2.0.4
+
+jython jar extension downloaded and placed relative to above downloaded
+
+To Run
+
+java -jar {sikulixidejar} -r pathtotest{.py}
