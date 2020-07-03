@@ -1,15 +1,12 @@
-
-#Question 1
-SELECT DISTINCT
-  COUNT(id) AS userCount
-FROM Users;
-
-#Question 2
-SELECT count(id) AS Users,year(CreationDate) AS YearCreated FROM Users 
-  where year(CreationDate) > 2009
-    group by year(CreationDate)
-      order by year(CreationDate) ASC;
-
+SELECT DISTINCT DisplayName 
+  FROM Badges AS b
+    INNER JOIN USERS AS u 
+        ON b.UserId = u.id 
+          WHERE Name = 'Enlightened' 
+             AND YEAR(Date) = 2016
+                 AND UserId = (SELECT TOP 1 id FROM Users
+                                  WHERE Location = 'South Africa' 
+                                      ORDER BY Reputation DESC)
 
 
 
