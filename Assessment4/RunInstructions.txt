@@ -3,8 +3,21 @@ python 3.7 installed
 
 sikulix ide downloaded - version 2.0.4
 
-jython jar extension downloaded and placed relative to above downloaded
+jython inerpreter 2.7.1 jar extension downloaded and placed relative to above downloaded
 
-To Run
+download : https://raiman.github.io/SikuliX1/downloads.html
+
+To Run :
 
 java -jar {sikulixidejar} -r pathtotest{.py}
+
+In order to continously run like I did : 
+
+create a jar of the applicaiton provided
+then create a powershell script scans all files with py extension and executes above command
+when each py file executes the powershell script searches for the success phrase of each script this is for some basic continous integration
+
+
+Bugs founds: 
+
+Clicking cancel throws null pointer exception
