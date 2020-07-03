@@ -1,14 +1,4 @@
-
-#Question 1
-SELECT DISTINCT
-  COUNT(id) AS userCount
-FROM Users;
-
-#Question 2
-SELECT count(id) AS Users,year(CreationDate) AS YearCreated FROM Users 
-  where year(CreationDate) > 2009
-    group by year(CreationDate)
-      order by year(CreationDate) ASC;
+no assumptions were made my query conclusions were drawn based off of smaller queries which gave me insight into the data which allowed me to conclude what the query should look like based off of what the smaller queries where for eg. writting queries in singular tables before joining in order to filter data to the desired result therefore knowing that the result would return as expected
 
 
 
