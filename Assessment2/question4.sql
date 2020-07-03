@@ -1,4 +1,4 @@
-SELECT DISTINCT DisplayName 
+SELECT count(b.Name) as EnlightenedBanges, u.DisplayName
   FROM Badges AS b
     INNER JOIN USERS AS u 
         ON b.UserId = u.id 
@@ -7,6 +7,7 @@ SELECT DISTINCT DisplayName
                  AND UserId = (SELECT TOP 1 id FROM Users
                                   WHERE Location = 'South Africa' 
                                       ORDER BY Reputation DESC)
+                   GROUP BY u.DisplayName 
 
 
 
