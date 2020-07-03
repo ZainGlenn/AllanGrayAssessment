@@ -1,0 +1,1 @@
+the query in question 5 is more optimal because question 4 uses a subquery which needs to return a result aswell not making it the most optimal way to retirieve the desired result
